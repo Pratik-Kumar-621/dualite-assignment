@@ -1,0 +1,284 @@
+.home {
+  display: flex;
+
+  .side-nav {
+    width: 350px;
+    height: 100vh;
+    background: #00199d;
+    color: #fff;
+    padding: 0px 48px;
+    &-logo {
+      display: flex;
+      align-items: center;
+      margin: 58px 0 100px 0;
+      &-img {
+        width: 73.119px;
+        height: 37px;
+        margin-right: 10px;
+      }
+      &-name {
+        width: 222px;
+        height: 29.071px;
+        scale: 0.9;
+      }
+    }
+    &-teams {
+      &-create {
+        width: 100%;
+        position: relative;
+        &-input {
+          font-size: 24px;
+          padding-left: 20px;
+          height: 52px;
+          width: 92%;
+          color: #fff;
+          border-radius: 10px;
+          background: rgba(255, 255, 255, 0.1);
+          border: none !important;
+          &:active,
+          &:focus {
+            border: none !important;
+            outline: none !important;
+          }
+        }
+        img {
+          position: absolute;
+          right: 24px;
+          top: 17px;
+          height: 18px;
+          width: 18px;
+          cursor: pointer;
+        }
+      }
+      &-list {
+        margin-top: 32px;
+        margin-bottom: 100px;
+        &-item {
+          font-size: 27px;
+          color: #969696;
+          padding: 7px 20px 12px;
+          cursor: pointer;
+        }
+        .active-tab-side {
+          color: #fff;
+          font-weight: 500;
+        }
+      }
+    }
+    &-help {
+      color: #fff;
+      font-size: 27px;
+      font-weight: 500;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+  }
+  .side-content {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+
+    .top-nav {
+      z-index: 1000;
+      padding-right: 65px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+      column-gap: 60px;
+      height: 160px;
+      &-upgrade {
+        color: #2448fc;
+        cursor: pointer;
+        font-size: 28.884px;
+        font-weight: 600;
+      }
+      &-notify {
+        img {
+          cursor: pointer;
+          height: 56px;
+          width: 56px;
+        }
+      }
+      .show {
+        .top-nav-account-body {
+          display: block;
+        }
+      }
+      .hide {
+        .top-nav-account-body {
+          display: none;
+        }
+      }
+      &-account {
+        img {
+          height: 88px;
+          width: 88px;
+          cursor: pointer;
+          user-select: none;
+        }
+        position: relative;
+        &-body {
+          position: absolute;
+          margin-top: 10px;
+          right: 0;
+          z-index: 10;
+          background-color: white;
+          ul {
+            display: inline-block;
+            width: 350px;
+            padding: 20px 36px;
+
+            border-radius: 12.191px;
+            border: 1px solid #000;
+            .nav-link {
+              color: #2448fc;
+            }
+            hr {
+              display: inline-block;
+              width: 100%;
+              height: 2px;
+              background: #000;
+              border: none;
+              margin: 5px 0;
+            }
+            li {
+              cursor: pointer;
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 500;
+              margin: 15px 0px;
+              img {
+                height: 20px;
+                width: 20px;
+                margin-right: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .team-details {
+      &-name {
+        padding-left: 60px;
+        color: #000;
+        font-size: 52px;
+        font-weight: 700;
+        margin-bottom: 50px;
+      }
+      &-tab {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 60px 24px;
+
+        &-links {
+          display: flex;
+          align-items: center;
+          gap: 20px;
+          &-item {
+            cursor: pointer;
+            button {
+              width: 200px;
+              height: 70px;
+            }
+            .outlined {
+              border-radius: 15.594px;
+              border: 0.866px solid #000;
+              color: #000;
+              font-size: 24px;
+              font-weight: 600;
+              text-transform: none !important;
+            }
+            .text {
+              color: #000;
+              font-size: 24px;
+              font-weight: 400;
+              text-transform: none !important;
+            }
+            img {
+              margin-left: 30px;
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+        &-sort {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          &-value {
+            color: #000;
+            font-size: 24px;
+            font-weight: 400;
+            text-transform: none !important;
+          }
+          &-order {
+            img {
+              height: 15px;
+              scale: 0.8;
+              transition: all 0.2s linear;
+              width: 30px;
+              cursor: pointer;
+              z-index: -1;
+            }
+            .reverse {
+              transition: all 0.2s linear;
+              rotate: 180deg;
+              margin-top: 10px;
+            }
+          }
+        }
+      }
+      &-page {
+        margin-top: 70px;
+        text-align: center;
+        &-settings {
+          font-size: 24px;
+        }
+        &-projects {
+          &-heading {
+            color: #000;
+            font-size: 40px;
+            font-weight: 700;
+            margin-bottom: 52px;
+          }
+          &-images {
+            margin-bottom: 32px;
+            img:first-child {
+              margin-right: 20px;
+            }
+          }
+          &-subheading {
+            color: #000;
+            font-size: 27px;
+            font-weight: 700;
+            margin-bottom: 21px;
+          }
+          &-desc {
+            color: #000;
+            font-size: 16px;
+            font-weight: 400;
+          }
+          &-button {
+            margin: 40px 0 50px;
+            button {
+              width: 200px;
+              height: 60px;
+              border-radius: 15.594px;
+              background: #2448fc;
+              color: #fff;
+              font-size: 24px;
+              font-weight: 600;
+              text-transform: none !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}
